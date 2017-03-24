@@ -30,4 +30,28 @@
  border-bottom: 3px solid #FFF;
 }
 
+.navigatie {
+	margin:0px;
+	width:100%;
+	float: left;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+	border-top: 1px solid #fff;
+	
+}
+
+.logo{
+	position: relative;
+	float:left;
+}
+
+.leftNav {
+	float: left;
+}
+
+.rightNav {
+	float: left;
+}
+
  /* gemaakt door Joey de Wit, 16039580 */
