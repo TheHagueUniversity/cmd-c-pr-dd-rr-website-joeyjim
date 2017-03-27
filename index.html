@@ -4,6 +4,9 @@
 		<meta charset="utf-8" />
 		<title>Homepage - Theater Imperium</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<[endif]-->
 	</head>
 <body>
 	<!--Hieronder de header -->
@@ -19,7 +22,7 @@
 			<a href="#"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</div>
 		<nav class="rightNav">
-			<button type="button" class="button" onclick="openModal()">Inloggen</button>
+			<button type="button" class="button" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
 			
 			<a href="#" class="button">Vrienden worden</a>
 			<ul class="navigatie">
@@ -48,7 +51,7 @@
 			</form>
 		</div>
 	</header>
-	
+	<!-- sectie welkomtekst en vrienden worden -->
 	<section class="vrienden">
 		<article>
 			<figure>
@@ -58,10 +61,29 @@
 				<h1>Toneelgroep Imperium</h1>
 			</hgroup>
 			<p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <a href="#" class="button">Vrienden worden</a> </p>
-			
 		</article>
 	</section>
-	<footer></footer>
+	<!-- sectie agenda -->
+	<section class="agenda">
+		<article>
+			<figure>
+				<img src="images/agenda1.png" alt="Voorstelling 1"/>
+			</figure>
+			<figure>
+				<img src="images/agenda2.png" alt="Voorstelling 2"/>
+			</figure>
+			<figure>
+				<img src="images/agenda3.png" alt="Voorstelling 3"/>
+			</figure>
+			<figure>
+				<img src="images/agenda4.jpg" alt="Voorstelling 4"/>
+			</figure>
+		</article>
+	</section>
+	
+	<footer>
+		
+	</footer>
 	
 	<!-- Gemaakt door Joey de Wit, 16039580 -->
 </body>
