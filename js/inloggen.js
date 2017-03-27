@@ -1,6 +1,11 @@
 var modal = document.getElementById('inloggen');
 
-// When the user clicks anywhere outside of the modal, close it
+function openModal() {
+   document.getElementById('inloggen').style.display='block';
+}
+
+
+// als je buiten de modal panel klikt, sluit het.
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
