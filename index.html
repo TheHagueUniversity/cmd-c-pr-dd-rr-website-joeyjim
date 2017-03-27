@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Homepage - Theater Imperium</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 <body>
 	<!--Hieronder de header -->
@@ -19,12 +19,32 @@
 			<a href="#"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</div>
 		<div class="rightNav">
-			<button type="button" class="button" onclick="alert('Hello world!')">Inloggen</button>
+			<button type="button" class="button" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
+			
 			<a href="#" class="button">Vrienden worden</a>
 			<ul class="navigatie">
 				<li><a href="#">Reserveren</a></li>
 				<li><a href="#">contact</a></li>
 			</ul>	
+		</div>
+		
+		<div id="inloggen" class="modal">
+			<form class="modal-content animate" action="">
+				<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
+				<div class="container">		
+					<label for="gebrnaam"><b>Gebruikersnaam</b></label>
+					<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
+
+					<label for="ww"><b>Wachtwoord</b></label>
+					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
+					
+					<button type="submit" class="button">Inloggen</button>
+				</div>
+				<div class="container">
+					<a href="#">Registreren</a>
+					<a href="#">Wachtwoord vergeten</a>
+				</div>
+			</form>
 		</div>
 	</header>	
 	<main></main>
