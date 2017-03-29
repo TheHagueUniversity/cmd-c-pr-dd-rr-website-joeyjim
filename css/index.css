@@ -1,8 +1,9 @@
 * {
- padding: 0;
- margin: 0;
- font-family: "BOOKOS";
- font-style: normal;
+	padding: 0;
+	margin: 0;
+	font-family: "BOOKOS";
+	font-style: normal;
+	box-sizing:border-box;
 }
 
 @font-face {
@@ -18,6 +19,7 @@ header, section, footer, aside, nav, article, figure, figcaption {
 /*header, nav en footer*/
 header {
 	position: fixed;
+	top:0;
 	z-index: 1;
 }
 
@@ -56,7 +58,7 @@ nav ul li a:hover {
 
 .leftNav, .rightNav {
 	float: left;
-	width: 41%;
+	width: 42%;
 }
 
 .rightNav ul, .leftNav ul{
@@ -66,8 +68,11 @@ nav ul li a:hover {
 .leftNav {
 	margin-top: 58px;
 }
+p.leftNav {
+	margin-top: 0 ;
+}
 
-.button {
+.btn-primairy {
     background-color: #DA0043;
     border: 1px dotted white;
     color: white;
@@ -80,8 +85,8 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.button:hover, {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.btn-primairy:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .logo{	
@@ -190,34 +195,44 @@ span.ww {
 }
 /* einde modal*/
 
+main {
+	margin-top: 160px;
+}
 
-/* section vrienden*/
+/* sections */
 section.vrienden{
-	float:left;
+	float: left;
 	width: 70%;
-	margin-top:220px;
+}
+
+section.overImperium{
+	margin-left:auto;
+	margin-right:auto;
+	width: 70%;
+	margin-bottom:10px;
 }
 
 article {
 	clear: both;
-	overflow: auto;
+	float:left;
 	width:100%;
+	margin-bottom: 30px;
 }
 
 .vrienden figure {
 	float: left;
-	width:328px;
-	height:218px;
+	width: 328px;
+	height: 218px;
 	padding: 5px;
 	margin: 20px;
 }
 
 section img {
-	width:100%
+	width: 100%
 }
 
 hgroup {
-	margin-top:40px;
+	margin-top: 40px;
 	margin-bottom: 5px;
 }
 
@@ -238,16 +253,14 @@ p a{
 	padding:10px;
 	margin:20px;
 }
+/* einde sections */
 
 /*footer*/
 footer figure {
 	margin-left:auto;
 	margin-right:auto;
 }
-footer p{
-	float:left;	
-	width:41%;
-}
+
 
 article a{
 	color:black;
