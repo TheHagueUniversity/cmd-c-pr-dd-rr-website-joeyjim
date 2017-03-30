@@ -9,8 +9,17 @@
 		<[endif]-->
 	</head>
 <body>
+	<!-- REVIEW
+	Je website is nu schermvullend. Als je een maximumbreedte wilt instellen kun je
+	een <div class="container"> gebruiken met een max-width: van 1200px en
+	een margin: 0 auto. Dan centreert ie ook gelijk mooi in het midden
+	-->
 	<!--Hieronder de header -->
-	<header >	
+	<!-- REVIEW
+	Probeer je comments functioneel te houden. Ik kan html lezen, dus ik zie
+	ook dat dit een header is door de tag te lezen
+	-->
+	<header >
 		<nav class="leftNav">
 			<ul class="navigatie">
 				<li><a href="OverImperium.html">Over imperium</a></li>
@@ -21,42 +30,64 @@
 		<figure class="logo">
 			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</figure>
+		<!-- REVIEW
+		Kijk nog even naar het voorbeeld wat ik gisteren in de klas heb gegeven (Codepen)
+		-->
 		<nav class="rightNav">
 			<button type="button" class="btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
-			
+			<!-- REVIEW
+			Goede class name. Wat je nog zou kunnen doen is een algemene class button
+			maken, en een tweede class primary. Zo heb je de basis al voor een
+			button staan, en kun je vrij snel uitbreiden naar secondary, tertiary, etc
+			-->
 			<a href="#" class="btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
 				<li><a href="#">Reserveren</a></li>
 				<li><a href="#">contact</a></li>
-			</ul>	
+			</ul>
 		</nav>
 	</header>
-	
+	<!-- REVIEW
+	Wat er nu gebeurt als een browser of zoekmachine jouw html leest, is dat ie eerst
+	door het inlogformulier heen moet voordat ie bij de belangrijkste content aankomt.
+	Hij interpreteert ook datgene wat bovenaan staan, als belangrijker dan wat onderaan staat.
+	Dit soort <div>'s kun je dan ook beter gewoon onderaan de pagina plaatsen.
+	Met CSS zet je het toch op de juiste plek, dus dat maakt verder ook niet uit
+	-->
 	<!-- inlogfunctie, ik maak hier een modal panel aan. -->
+	<!-- REVIEW
+	Comment hier zou kunnen zijn: Inloggen via emailadres en wachtwoord, of via Facebook
+	-->
 	<div id="inloggen" class="modal">
 		<form class="modal-content animate" action="">
 			<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
-			<div class="container">		
+			<div class="container">
 				<label for="gebrnaam"><b>Gebruikersnaam</b></label>
 				<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
 
 				<label for="ww"><b>Wachtwoord</b></label>
 				<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
-				
+
 				<button type="submit" class="btn-primairy">Inloggen</button>
+				<!-- REVIEW
+				Bij een form moet je geen button tag gebruik, maar input type=submit
+				-->
 			</div>
 			<div class="container">
 				<a href="#">Registreren</a>
 				<a href="#">Wachtwoord vergeten</a>
 			</div>
 		</form>
-	</div>	
+	</div>
 	<main>
 		<!-- sectie welkomtekst en vrienden worden -->
 		<section class="vrienden">
 			<article>
 				<figure>
 					<img src="images/vrienden.jpg" alt="vrienden"/>
+					<!-- REVIEW
+					Alt tekst zou hier moeten zijn: Vrienden van het Imperium Theater
+					-->
 				</figure>
 				<hgroup>
 					<h1>Toneelgroep Imperium</h1>
@@ -64,10 +95,14 @@
 				<p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <a href="#" class="btn-primairy">Vrienden worden</a> </p>
 			</article>
 		</section>
-		
+
 		<!-- sectie voor de recente voorstellingen agenda -->
 		<section class="agenda">
 			<article>
+				<!-- REVIEW
+				de agenda is geen article, maar kan gewoon een section zijn
+				Alle voorstellingen hieronder is een lijst, dus gebruik dan een ul
+				-->
 				<a href="#"><h1>agenda</h1></a>
 				<figure>
 					<img src="images/agenda1.png" alt="Voorstelling 1"/>
@@ -83,10 +118,13 @@
 				</figure>
 			</article>
 		</section>
-		
+
 		<!-- sectie voor de recente foto's -->
 		<section class="fotos">
 			<article>
+				<!-- REVIEW
+				Zie eerder commentaar
+				-->
 				<a href="#"><h1>foto's</h1></a>
 				<figure>
 					<img src="images/foto1.png" alt="Recente foto 1"/>
@@ -106,7 +144,7 @@
 			</article>
 		</section>
 	</main>
-	
+
 	<!-- hieronder de footer -->
 	<footer>
 		<p class="leftNav">
@@ -122,10 +160,10 @@
 			<ul>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Nieuwsbrief</a></li>
-			</ul>	
+			</ul>
 		</nav>
 	</footer>
-	
+
 	<!-- Gemaakt door Joey de Wit, 16039580 -->
 </body>
 </html>
