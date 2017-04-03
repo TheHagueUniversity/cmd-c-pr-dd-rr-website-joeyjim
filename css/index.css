@@ -6,14 +6,15 @@
 	box-sizing:border-box;
 }
 
+.container {
+	max-width:80%;
+	margin: 0 auto;
+}
+
 @font-face {
      font-family: "BOOKOS";
      src:  url('BOOKOS.ttf') format('truetype');
      font-style:normal;
-}
-
-header, section, footer, aside, nav, article, figure, figcaption {
-	display: block;
 }
 
 /*header, nav en footer*/
@@ -28,8 +29,8 @@ header, footer {
 	padding: 15px;
 	background-color: #990000;
 	text-align: center;
-	width: 100%;
 	height:145px;
+	width: 100%
 }
 
 nav ul {
@@ -69,24 +70,27 @@ nav ul li a:hover {
 	margin-top: 58px;
 }
 p.leftNav {
-	margin-top: 0 ;
+	margin-top: 0;
+	color: white;
+}
+
+.btn {
+	border: 1px dotted white;
+	cursor: pointer;
+	display: inline-block;
+	margin: 4px 2px;
+	padding: 15px 32px;
+    text-decoration: none;
+}
+
+.btn:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btn-primairy {
     background-color: #DA0043;
-    border: 1px dotted white;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.btn-primairy:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    font-size: 16px; 
 }
 
 .logo{	
@@ -104,33 +108,90 @@ p.leftNav {
 }
 /* einde */
 
-/*model/*
-/* input velden */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+
+
+main {
+	margin-top: 160px;
 }
 
-.container {
-    padding: 16px;
+/* sections */
+article {
+	float:left;
+	margin-bottom: 30px;
 }
 
-.container a {
-	color: blue;
+.agenda ul{
+	padding:10px;
+	margin:20px;
 }
 
-.container a:hover {
-	color: Purple;
+.agenda ul li{
+	float: left;
+	width: 23%;
+	margin: 0 1%;
+	list-style: none;
 }
 
-span.ww {
-    float: right;
-    padding-top: 16px;
+.vrienden figure {
+	float: left;
+	width: 328px;
+	height: 218px;
+	padding: 5px;
+	margin: 20px;
 }
+
+section img {
+	width: 100%
+}
+
+hgroup {
+	margin-top: 40px;
+	margin-bottom: 5px;
+}
+
+p a{
+	float:right;
+}
+
+
+
+.fotos figure{
+	float: left;
+	width:16.7%;
+	padding:10px;
+	margin:20px;
+}
+
+.mainfoto img {
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+section.overImperium{
+	margin-left:auto;
+	margin-right:auto;
+	width: 70%;
+	margin-bottom:10px;
+}
+
+/* einde sections */
+
+/*footer*/
+footer figure {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+article a{
+	color:black;
+	text-decoration: none;
+	text-align:center;
+}
+
+
 
 /* Het inlogscherm (achtergrond) */
 .modal {
@@ -193,79 +254,37 @@ span.ww {
        float: none;
     }
 }
+
+
+/*model/*
+/* input velden */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal-input {
+    padding: 16px;
+}
+
+.modal-input a {
+	color: blue;
+}
+
+.modal-input a:hover {
+	color: Purple;
+}
+
+span.ww {
+    float: right;
+    padding-top: 16px;
+}
+
 /* einde modal*/
 
-main {
-	margin-top: 160px;
-}
-
-/* sections */
-section.vrienden{
-	float: left;
-	width: 70%;
-}
-
-section.overImperium{
-	margin-left:auto;
-	margin-right:auto;
-	width: 70%;
-	margin-bottom:10px;
-}
-
-article {
-	clear: both;
-	float:left;
-	width:100%;
-	margin-bottom: 30px;
-}
-
-.vrienden figure {
-	float: left;
-	width: 328px;
-	height: 218px;
-	padding: 5px;
-	margin: 20px;
-}
-
-section img {
-	width: 100%
-}
-
-hgroup {
-	margin-top: 40px;
-	margin-bottom: 5px;
-}
-
-p a{
-	float:right;
-}
-
-.agenda figure{
-	float: left;
-	width:21%;
-	padding:10px;
-	margin:20px;
-}
-
-.fotos figure{
-	float: left;
-	width:16%;
-	padding:10px;
-	margin:20px;
-}
-/* einde sections */
-
-/*footer*/
-footer figure {
-	margin-left:auto;
-	margin-right:auto;
-}
-
-
-article a{
-	color:black;
-	text-decoration: none;
-	text-align:center;
-}
 
  /* gemaakt door Joey de Wit, 16039580 */

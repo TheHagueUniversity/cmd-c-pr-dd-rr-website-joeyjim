@@ -9,8 +9,7 @@
 		<[endif]-->
 	</head>
 <body>
-	<!--Hieronder de header -->
-	<header >	
+	<header >
 		<nav class="leftNav">
 			<ul class="navigatie">
 				<li><a href="OverImperium.html">Over imperium</a></li>
@@ -22,53 +21,35 @@
 			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</figure>
 		<nav class="rightNav">
-			<button type="button" class="btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
-			
-			<a href="#" class="btn-primairy">Vrienden worden</a>
+			<a href="#" class="btn btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
 				<li><a href="#">Reserveren</a></li>
 				<li><a href="#">contact</a></li>
-			</ul>	
+			</ul>
 		</nav>
 	</header>
 	
-	<!-- inlogfunctie, ik maak hier een modal panel aan. -->
-	<div id="inloggen" class="modal">
-		<form class="modal-content animate" action="">
-			<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
-			<div class="container">		
-				<label for="gebrnaam"><b>Gebruikersnaam</b></label>
-				<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
-
-				<label for="ww"><b>Wachtwoord</b></label>
-				<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
-				
-				<button type="submit" class="btn-primairy">Inloggen</button>
-			</div>
-			<div class="container">
-				<a href="#">Registreren</a>
-				<a href="#">Wachtwoord vergeten</a>
-			</div>
-		</form>
-	</div>	
-	<main>
-		<!-- sectie welkomtekst en vrienden worden -->
-		<section class="overImperium">
-			<article>
-				<hgroup>
-					<h1>Over Imperium</h1>
-				</hgroup>
-				<p>
-					Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <br><br>
-					Hier vind je meer informatie over wat een Imperium-lidmaatschap inhoudt en hoe je lid kunt worden.<br><br>
-					Ons archief laat zien welke stukken we hebben gespeeld sinds 2001. Ook kun je hier productiefoto’s bekijken.<br><br>
-					Ben je enthousiast over Imperium, maar zie je jezelf niet op de planken staan? Dan is vriend worden wellicht wat voor jou!
-				</p>
-			</article>
-		</section>
-	</main>
-	
-	<!-- hieronder de footer -->
+	<div class="container">
+		<main>
+			<figure class="mainfoto">
+				<img src="images/overImperium.jpg" alt="over Imperium"/>
+			</figure>
+			<!-- sectie welkomtekst en vrienden worden -->
+			<section class="overImperium">
+				<article>
+					<hgroup>
+						<h1>Over Imperium</h1>
+					</hgroup>
+					<p>
+						Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <br><br>
+						Hier vind je meer informatie over wat een Imperium-lidmaatschap inhoudt en hoe je lid kunt worden.<br><br>
+						Ons archief laat zien welke stukken we hebben gespeeld sinds 2001. Ook kun je hier productiefoto’s bekijken.<br><br>
+						Ben je enthousiast over Imperium, maar zie je jezelf niet op de planken staan? Dan is vriend worden wellicht wat voor jou!
+					</p>
+				</article>
+			</section>
+		</main>
+	</div>
 	<footer>
 		<p class="leftNav">
 			Theater Imperium<br>
@@ -86,6 +67,28 @@
 			</ul>	
 		</nav>
 	</footer>
+	
+	<div id="inloggen" class="modal">
+			<form class="modal-content animate" action="">
+				<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
+				<div class="modal-input">
+					<label for="gebrnaam"><b>Gebruikersnaam</b></label>
+					<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
+
+					<label for="ww"><b>Wachtwoord</b></label>
+					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
+
+					<button type="submit" class="btn btn-primairy">Inloggen</button>
+					<!-- REVIEW
+					Bij een form moet je geen button tag gebruik, maar input type=submit
+					-->
+				</div>
+				<div class="modal-input">
+					<a href="#">Registreren</a>
+					<a href="#">Wachtwoord vergeten</a>
+				</div>
+			</form>
+		</div>
 	
 	<!-- Gemaakt door Joey de Wit, 16039580 -->
 </body>
