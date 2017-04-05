@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Homepage - Theater Imperium</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<[endif]-->
+	</head>
+<body>
+	<header >
+		<nav class="leftNav">
+			<ul class="navigatie">
+				<li><a href="OverImperium.html">Over imperium</a></li>
+				<li><a href="#">Agenda</a></li>
+				<li><a href="#">Foto's</a></li>
+			</ul>
+		</nav>
+		<figure class="logo">
+			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
+		</figure>
+	
+		<nav class="rightNav">
+			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
+
+			<a href="#" class="btn btn-primairy">Vrienden worden</a>
+			<ul class="navigatie">
+				<li><a href="#">Reserveren</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		
+		<main>
+			<article>
+				<h1>Wordt vrienden Met Toneelgroep Imperium</h1>
+				<p>
+					Leukste theater van Leiden zoekt vriend m/v<br>
+					Wil jij ook dat Toneelgroep Imperium mooie voorstelligen blijft maken?<br>
+					Wil jij de voorstellingen van Toneelgroep Imperium met korting zien?<br>
+					Of zelfs helemaal gratis?<br>
+					Word donateur van Toneelgroep Imperium!<br><br>
+
+					Door jouw donatie kan Toneelgroep Imperium top-producties blijven maken.<br>
+					Ontvang als bonus vier keer per jaar het verenigingsblad IMPPRESSIE.<br><br>
+
+					<h3>Het donateursmenu</h3><br>
+
+					Twee vrijkaarten per productie:<br>
+					Doneer € 60 of hoger<br><br>
+
+					Een vrijkaart per productie:<br>
+					Doneer € 45 t/m € 59<br><br>
+
+					€ 2 korting voor 2 personen per productie:<br>
+					Doneer € 26 t/m € 44<br><br>
+
+					Alleen het verenigingsblad IMPPRESSIE:<br>
+					Doneer max. € 25
+				</p>
+			</article>
+			
+			<aside>
+				<figure>
+						<img src="images/vrienden.jpg" alt="vrienden van het Imperium Theater"/>
+				</figure>
+				
+				<form action="" method="post">
+						<label for="naam"><b>Uw naam (verplicht)</b></label>
+						<input type="text" placeholder="Vul hier uw naam in" name="naam" id="naam" required>
+
+						<label for="email"><b>Uw email (verplicht)</b></label>
+						<input type="email" placeholder="Vul hier uw email in" name="email" id="email" required>
+						
+						<label for="donatie"><b>Uw Donatie</b></label>
+						<input type="email" placeholder="Vul hier uw email in" name="email" id="email" required>
+						
+						<input type="submit" class="btn btn-primairy" value="Inloggen">			
+				</form>
+				
+				
+				
+			</aside>
+		</main>
+		
+	</div>
+		<footer>
+			<p class="leftNav">
+				Theater Imperium<br>
+				Oude Vest 33e<br>
+				2312 XR Leiden<br>
+				071 5141035
+			</p>
+			<figure class="logo">
+				<a href="index.html"><img src="images/logo2.png" alt="Toneelgroep Imperium"/></a>
+			</figure>
+			<nav class="rightNav">
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Nieuwsbrief</a></li>
+				</ul>
+			</nav>
+		</footer>
+		
+		<!-- REVIEW
+		Wat er nu gebeurt als een browser of zoekmachine jouw html leest, is dat ie eerst
+		door het inlogformulier heen moet voordat ie bij de belangrijkste content aankomt.
+		Hij interpreteert ook datgene wat bovenaan staan, als belangrijker dan wat onderaan staat.
+		Dit soort <div>'s kun je dan ook beter gewoon onderaan de pagina plaatsen.
+		Met CSS zet je het toch op de juiste plek, dus dat maakt verder ook niet uit
+		-->
+		<!-- inlogfunctie, ik maak hier een modal panel aan. -->
+		<!-- REVIEW
+		Comment hier zou kunnen zijn: Inloggen via emailadres en wachtwoord, of via Facebook
+		-->
+		<div id="inloggen" class="modal">
+			<form class="modal-content animate" action="">
+				<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
+				<div class="modal-input">
+					<label for="gebrnaam"><b>Gebruikersnaam</b></label>
+					<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
+
+					<label for="ww"><b>Wachtwoord</b></label>
+					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
+					
+					<input type="submit" class="btn btn-primairy" value="Inloggen">
+					<!-- REVIEW
+					Bij een form moet je geen button tag gebruik, maar input type=submit
+					-->
+				</div>
+				<div class="modal-input">
+					<a href="#">Registreren</a>
+					<a href="#">Wachtwoord vergeten</a>
+				</div>
+			</form>
+		</div>
+		
+		
+	<!-- Gemaakt door Joey de Wit, 16039580 -->
+</body>
+</html>

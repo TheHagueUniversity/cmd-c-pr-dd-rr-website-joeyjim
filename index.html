@@ -39,7 +39,7 @@
 			maken, en een tweede class primary. Zo heb je de basis al voor een
 			button staan, en kun je vrij snel uitbreiden naar secondary, tertiary, etc
 			-->
-			<a href="#" class="btn btn-primairy">Vrienden worden</a>
+			<a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
 				<li><a href="#">Reserveren</a></li>
 				<li><a href="#">contact</a></li>
@@ -61,12 +61,12 @@
 					<hgroup>
 						<h1>Toneelgroep Imperium</h1>
 					</hgroup>
-					<p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <a href="#" class="btn btn-primairy">Vrienden worden</a> </p>
+					<p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a> </p>
 				</article>
 			</section>
 
 			<!-- sectie voor de recente voorstellingen agenda -->
-			<section class="agenda">
+			<section class="list agenda">
 					<!-- REVIEW
 					de agenda is geen article, maar kan gewoon een section zijn
 					Alle voorstellingen hieronder is een lijst, dus gebruik dan een ul
@@ -97,29 +97,35 @@
 					</ul>
 			</section>
 
-			<!-- sectie voor de recente foto's -->
-			<section class="fotos">
-				<article>
-					<!-- REVIEW
-					Zie eerder commentaar
-					-->
+			<section class=" list fotos">
 					<a href="#"><h1>foto's</h1></a>
-					<figure>
-						<img src="images/foto1.png" alt="Recente foto 1"/>
-					</figure>
-					<figure>
-						<img src="images/foto2.png" alt="Recente foto 2"/>
-					</figure>
-					<figure>
-						<img src="images/foto3.png" alt="Recente foto 3"/>
-					</figure>
-					<figure>
-						<img src="images/foto4.png" alt="Recente foto 4"/>
-					</figure>
-					<figure>
-						<img src="images/foto5.jpg" alt="Recente foto 5"/>
-					</figure>
-				</article>
+					<ul>
+						<li>
+							<figure>
+								<img src="images/foto1.png" alt="Recente foto 1"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/foto2.png" alt="Recente foto 2"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/foto3.png" alt="Recente foto 3"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/foto4.png" alt="Recente foto 4"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/foto5.jpg" alt="Recente foto 5"/>
+							</figure>
+						</li>
+					</ul>
 			</section>
 		</main>
 	</div>
@@ -161,8 +167,8 @@
 
 					<label for="ww"><b>Wachtwoord</b></label>
 					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
-
-					<button type="submit" class="btn btn-primairy">Inloggen</button>
+					
+					<input type="submit" class="btn btn-primairy" value="Inloggen">
 					<!-- REVIEW
 					Bij een form moet je geen button tag gebruik, maar input type=submit
 					-->

@@ -120,16 +120,23 @@ article {
 	margin-bottom: 30px;
 }
 
-.agenda ul{
+.agenda ul, .fotos ul{
 	padding:10px;
 	margin:20px;
 }
 
-.agenda ul li{
+.list ul li {
 	float: left;
-	width: 23%;
-	margin: 0 1%;
+	margin:0 1%;
 	list-style: none;
+}
+
+.agenda ul li{
+	width: 23%;
+}
+
+.fotos ul li{
+	width:18%;	
 }
 
 .vrienden figure {
@@ -153,20 +160,10 @@ p a{
 	float:right;
 }
 
-
-
-.fotos figure{
-	float: left;
-	width:16.7%;
-	padding:10px;
-	margin:20px;
-}
-
 .mainfoto img {
 	width:60%;
 	margin-left:auto;
 	margin-right:auto;
-	
 }
 
 section.overImperium{
@@ -184,8 +181,7 @@ footer figure {
 	margin-right:auto;
 }
 
-
-article a{
+section a{
 	color:black;
 	text-decoration: none;
 	text-align:center;
