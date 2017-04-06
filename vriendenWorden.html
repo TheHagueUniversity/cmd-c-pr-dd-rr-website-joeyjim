@@ -20,10 +20,13 @@
 		<figure class="logo">
 			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</figure>
-	
+
 		<nav class="rightNav">
 			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
-
+			<!-- REVIEW
+			Ben je bekend met jQuery? Zo niet, kijk eens of je je hier een beetje in kan verdiepen.
+			Hiermee kun je heel makkelijk dit soort acties afhandelen. Google eens op jQuery en show, hide, toggle
+			-->
 			<a href="#" class="btn btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
 				<li><a href="#">Reserveren</a></li>
@@ -32,7 +35,7 @@
 		</nav>
 	</header>
 	<div class="container">
-		
+
 		<main>
 			<article>
 				<h1>Wordt vrienden Met Toneelgroep Imperium</h1>
@@ -61,30 +64,32 @@
 					Doneer max. € 25
 				</p>
 			</article>
-			
+
 			<aside>
 				<figure>
 						<img src="images/vrienden.jpg" alt="vrienden van het Imperium Theater"/>
 				</figure>
-				
+
 				<form action="" method="post">
 						<label for="naam"><b>Uw naam (verplicht)</b></label>
 						<input type="text" placeholder="Vul hier uw naam in" name="naam" id="naam" required>
 
 						<label for="email"><b>Uw email (verplicht)</b></label>
 						<input type="email" placeholder="Vul hier uw email in" name="email" id="email" required>
-						
+
 						<label for="donatie"><b>Uw Donatie</b></label>
 						<input type="email" placeholder="Vul hier uw email in" name="email" id="email" required>
-						
-						<input type="submit" class="btn btn-primairy" value="Inloggen">			
+						<!-- REVIEW
+						input type, placeholder en id kloppen hier niet
+						-->
+						<input type="submit" class="btn btn-primairy" value="Inloggen">
 				</form>
-				
-				
-				
+
+
+
 			</aside>
 		</main>
-		
+
 	</div>
 		<footer>
 			<p class="leftNav">
@@ -103,7 +108,7 @@
 				</ul>
 			</nav>
 		</footer>
-		
+
 		<!-- REVIEW
 		Wat er nu gebeurt als een browser of zoekmachine jouw html leest, is dat ie eerst
 		door het inlogformulier heen moet voordat ie bij de belangrijkste content aankomt.
@@ -124,7 +129,7 @@
 
 					<label for="ww"><b>Wachtwoord</b></label>
 					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
-					
+
 					<input type="submit" class="btn btn-primairy" value="Inloggen">
 					<!-- REVIEW
 					Bij een form moet je geen button tag gebruik, maar input type=submit
@@ -136,8 +141,8 @@
 				</div>
 			</form>
 		</div>
-		
-		
+
+
 	<!-- Gemaakt door Joey de Wit, 16039580 -->
 </body>
 </html>
