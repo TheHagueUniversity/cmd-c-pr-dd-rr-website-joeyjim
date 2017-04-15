@@ -19,7 +19,7 @@
 	ook dat dit een header is door de tag te lezen
 	-->
 	<header >
-		<nav class="leftNav">
+		<nav class="topNav leftNav">
 			<ul class="navigatie">
 				<li><a href="OverImperium.html">Over imperium</a></li>
 				<li><a href="#">Agenda</a></li>
@@ -32,7 +32,7 @@
 		<!-- REVIEW
 		Kijk nog even naar het voorbeeld wat ik gisteren in de klas heb gegeven (Codepen)
 		-->
-		<nav class="rightNav">
+		<nav class="topnav rightNav">
 			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
 			<!-- REVIEW
 			Goede class name. Wat je nog zou kunnen doen is een algemene class button
@@ -72,7 +72,6 @@
 					Alle voorstellingen hieronder is een lijst, dus gebruik dan een ul
 					-->
 					<a href="#"><h1>agenda</h1></a>
-
 					<ul>
 						<li>
 							<figure>
@@ -129,56 +128,58 @@
 			</section>
 		</main>
 	</div>
-		<footer>
-			<p class="leftNav">
-				Theater Imperium<br>
-				Oude Vest 33e<br>
-				2312 XR Leiden<br>
-				071 5141035
-			</p>
-			<figure class="logo">
-				<a href="index.html"><img src="images/logo2.png" alt="Toneelgroep Imperium"/></a>
-			</figure>
-			<nav class="rightNav">
-				<ul>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Nieuwsbrief</a></li>
-				</ul>
-			</nav>
-		</footer>
+	<footer>
+		<p class="bottomNav leftNav">
+			Theater Imperium<br>
+			Oude Vest 33e<br>
+			2312 XR Leiden<br>
+			071 5141035
+		</p>
+		<figure class="logo">
+			<a href="index.html"><img src="images/logo2.png" alt="Toneelgroep Imperium"/></a>
+		</figure>
+		<nav class="bottomNav rightNav">
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Nieuwsbrief</a></li>
+			</ul>
+		</nav>
+	</footer>
 
-		<!-- REVIEW
-		Wat er nu gebeurt als een browser of zoekmachine jouw html leest, is dat ie eerst
-		door het inlogformulier heen moet voordat ie bij de belangrijkste content aankomt.
-		Hij interpreteert ook datgene wat bovenaan staan, als belangrijker dan wat onderaan staat.
-		Dit soort <div>'s kun je dan ook beter gewoon onderaan de pagina plaatsen.
-		Met CSS zet je het toch op de juiste plek, dus dat maakt verder ook niet uit
-		-->
-		<!-- inlogfunctie, ik maak hier een modal panel aan. -->
-		<!-- REVIEW
-		Comment hier zou kunnen zijn: Inloggen via emailadres en wachtwoord, of via Facebook
-		-->
-		<div id="inloggen" class="modal">
-			<form class="modal-content animate" action="">
-				<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
-				<div class="modal-input">
-					<label for="gebrnaam"><b>Gebruikersnaam</b></label>
-					<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
+	<!-- REVIEW
+	Wat er nu gebeurt als een browser of zoekmachine jouw html leest, is dat ie eerst
+	door het inlogformulier heen moet voordat ie bij de belangrijkste content aankomt.
+	Hij interpreteert ook datgene wat bovenaan staan, als belangrijker dan wat onderaan staat.
+	Dit soort <div>'s kun je dan ook beter gewoon onderaan de pagina plaatsen.
+	Met CSS zet je het toch op de juiste plek, dus dat maakt verder ook niet uit
+	-->
+	
+	<!-- REVIEW
+	Comment hier zou kunnen zijn: Inloggen via emailadres en wachtwoord, of via Facebook
+	-->
+	<!-- Inloggen via emailadres en wachtwoord -->
+	
+	<div id="inloggen" class="modal">
+		<form class="modal-content animate" action="">
+			<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
+			<div class="modal-input">
+				<label for="gebrnaam"><b>Gebruikersnaam</b></label>
+				<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
 
-					<label for="ww"><b>Wachtwoord</b></label>
-					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
-					
-					<input type="submit" class="btn btn-primairy" value="Inloggen">
-					<!-- REVIEW
-					Bij een form moet je geen button tag gebruik, maar input type=submit
-					-->
-				</div>
-				<div class="modal-input">
-					<a href="#">Registreren</a>
-					<a href="#">Wachtwoord vergeten</a>
-				</div>
-			</form>
-		</div>
+				<label for="ww"><b>Wachtwoord</b></label>
+				<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
+				
+				<input type="submit" class="btn btn-primairy" value="Inloggen">
+				<!-- REVIEW
+				Bij een form moet je geen button tag gebruik, maar input type=submit
+				-->
+			</div>
+			<div class="modal-input">
+				<a href="#">Registreren</a>
+				<a href="#">Wachtwoord vergeten</a>
+			</div>
+		</form>
+	</div>
 
 
 	<!-- Gemaakt door Joey de Wit, 16039580 -->

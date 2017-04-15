@@ -10,9 +10,9 @@
 	</head>
 <body>
 	<header >
-		<nav class="leftNav">
+		<nav class="topNav leftNav">
 			<ul class="navigatie">
-				<li><a href="OverImperium.html">Over imperium</a></li>
+				<li><a href="OverImperium.html" class="active">Over imperium</a></li>
 				<li><a href="#">Agenda</a></li>
 				<li><a href="#">Foto's</a></li>
 			</ul>
@@ -20,9 +20,9 @@
 		<figure class="logo">
 			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</figure>
-		<nav class="rightNav">
+		<nav class="topNav rightNav">
 			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
-			<a href="#" class="btn btn-primairy">Vrienden worden</a>
+			<a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
 				<li><a href="#">Reserveren</a></li>
 				<li><a href="#">contact</a></li>
@@ -32,7 +32,7 @@
 	
 	<div class="container">
 		<main>
-			<figure class="mainfoto">
+			<figure class="vriendFigure">
 				<img src="images/overImperium.jpg" alt="over Imperium"/>
 			</figure>
 			<!-- sectie welkomtekst en vrienden worden -->
@@ -47,12 +47,13 @@
 						Ons archief laat zien welke stukken we hebben gespeeld sinds 2001. Ook kun je hier productiefoto’s bekijken.<br><br>
 						Ben je enthousiast over Imperium, maar zie je jezelf niet op de planken staan? Dan is vriend worden wellicht wat voor jou!
 					</p>
+					<a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a>
 				</article>
 			</section>
 		</main>
 	</div>
 	<footer>
-		<p class="leftNav">
+		<p class="bottomNav leftNav">
 			Theater Imperium<br>
 			Oude Vest 33e<br>
 			2312 XR Leiden<br>
@@ -61,7 +62,7 @@
 		<figure class="logo">
 			<a href="index.html"><img src="images/logo2.png" alt="Toneelgroep Imperium"/></a>
 		</figure>
-		<nav class="rightNav">
+		<nav class="bottomNav rightNav">
 			<ul>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Nieuwsbrief</a></li>
@@ -69,27 +70,25 @@
 		</nav>
 	</footer>
 	
+	<!-- Inloggen via emailadres en wachtwoord -->
 	<div id="inloggen" class="modal">
-			<form class="modal-content animate" action="">
-				<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
-				<div class="modal-input">
-					<label for="gebrnaam"><b>Gebruikersnaam</b></label>
-					<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
+		<form class="modal-content animate" action="">
+			<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
+			<div class="modal-input">
+				<label for="gebrnaam"><b>Gebruikersnaam</b></label>
+				<input type="text" placeholder="Vul hier uw gebruikersnaam in" name="gebrnaam" id="gebrnaam" required>
 
-					<label for="ww"><b>Wachtwoord</b></label>
-					<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
-					
-					<input type="submit" class="btn btn-primairy" value="Inloggen">
-					<!-- REVIEW
-					Bij een form moet je geen button tag gebruik, maar input type=submit
-					-->
-				</div>
-				<div class="modal-input">
-					<a href="#">Registreren</a>
-					<a href="#">Wachtwoord vergeten</a>
-				</div>
-			</form>
-		</div>
+				<label for="ww"><b>Wachtwoord</b></label>
+				<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
+				
+				<input type="submit" class="btn btn-primairy" value="Inloggen">
+			</div>
+			<div class="modal-input">
+				<a href="#">Registreren</a>
+				<a href="#">Wachtwoord vergeten</a>
+			</div>
+		</form>
+	</div>
 	
 	<!-- Gemaakt door Joey de Wit, 16039580 -->
 </body>

@@ -53,17 +53,20 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #FFF;
 	border-bottom: 3px solid #FFF;
 }
 
-.leftNav, .rightNav {
+.topNav, .bottomNav {
 	float: left;
 	width: 42%;
 }
 
-.rightNav ul, .leftNav ul{
+.topNav ul{
 	border-top: 1px solid #fff;
+}
+
+a.active{
+	color:black;
 }
 
 .leftNav {
@@ -160,10 +163,12 @@ p a{
 	float:right;
 }
 
-.mainfoto img {
-	width:60%;
-	margin-left:auto;
-	margin-right:auto;
+.vriendFigure img {
+	width:78%;
+}
+
+.vriendFigure {
+	float:right;
 }
 
 section.overImperium{
@@ -187,7 +192,21 @@ section a{
 	text-align:center;
 }
 
+.donateurParagraaf {
+	float:left;
+	margin: 0 1.5%;
+	width:50%;
+}
 
+.vriendenFormulier {
+	float:right;
+	margin: 0 1.5%;
+	width:43%;
+}
+
+.vriendenFormulier img {
+	width:55%;
+}
 
 /* Het inlogscherm (achtergrond) */
 .modal {
@@ -254,14 +273,23 @@ section a{
 
 /*model/*
 /* input velden */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email], input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+	border-radius: 4px;
     box-sizing: border-box;
 }
+
+input[type=text]:valid, input[type=email]:valid {
+	background-color:lightgreen;
+}
+
+/*input[type=email]:invalid {
+	background-color:LightCoral;
+}*/
 
 .modal-input {
     padding: 16px;
