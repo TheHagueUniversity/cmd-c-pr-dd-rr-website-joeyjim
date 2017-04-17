@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Contact - Theater Imperium</title>
+		<title>Homepage - Theater Imperium</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,8 +18,10 @@
 			</ul>
 		</nav>
 		<figure class="logo">
+			<!-- escape hatch -->
 			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</figure>
+		
 		<nav class="topNav rightNav">
 			<!--als op de button geklikt wordt, komt het inlog modal tevoorschijn-->
 			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
@@ -27,50 +29,32 @@
 			<ul class="navigatie">
 			<!--als op de button geklikt wordt, komt het reserveer modal tevoorschijn-->
 				<li><a onclick="document.getElementById('reserveren').style.display='block'">Reserveren</a></li>
-				<li><a href="contact.html" class="active">contact</a></li>
+				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="container">
 		<main>
-			<article class="donateurParagraaf">
-				<h1>Contact</h1><br>
-				<p>
-					Theater Imperium<br>
-					Oude Vest 33e<br>
-					2312 XR Leiden<br><br>
-
-					<strong>Telefoon: </strong><br>
-					071 514 1035<br><br>
-
-					<strong>E-mail:</strong><br>
-					Info@imperiumtheater.nl<br><br>
-
-					Heeft u een vraag voor imperium? Vul onderstaand formulier in.<br><br>
-				</p>	
-			
-				<form action="" method="post" id="vraagFormulier">
+		<h1>Registreren</h1>
+			<form action="" method="post" id="registreerFormulier" class="registreerForm">
 						<label for="naam"><b>Uw naam (verplicht)</b></label>
 						<input type="text" placeholder="Vul hier uw naam in" name="naam" id="naam" required>
 
 						<label for="email"><b>Uw email (verplicht)</b></label>
 						<input type="email" placeholder="Vul hier uw email in" name="email" id="email" required>
 						
-						<label for="vraag"><b>Wat is uw vraag? (verplicht)</b></label>
-						<textarea id="vraag" name="vraag" form="vraagFormulier" placeholder="vul hier uw vraag in" rows="4" required></textarea>
-
-						<input type="submit" class="btn btn-primairy" value="Verzenden">			
+						<label for="ww"><b>Wachtwoord (verplicht)</b></label>
+						<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
+						
+						<label for="datum"><b>Geboortedatum (verplicht)</b></label>
+						<input type="date" name="datum" id="datum" required>
+						
+						<input type="submit" class="btn btn-primairy" value="Registreren">	
+						<p>Door op Registreren te klikken, ga je akkoord met onze Algemene voorwaarden en geef je aan dat u deze heeft gelezen.</p>						
 				</form>	
-			</article>
+				
 		</main>
-		
-		<aside class="vriendenFormulier">
-			<figure>
-				<img src="images/foto4.png" alt="contact foto"/>
-			</figure>
-		</aside>
 	</div>
-	
 	<footer>
 		<p class="bottomNav leftNav">
 			Theater Imperium<br>
@@ -83,7 +67,7 @@
 		</figure>
 		<nav class="bottomNav rightNav">
 			<ul>
-				<li><a href="contact.html" class="active">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 				<li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
 			</ul>
 		</nav>
@@ -103,7 +87,7 @@
 				<input type="submit" class="btn btn-primairy" value="Inloggen">
 			</div>
 			<div class="modal-input">
-				<a href="registreren.html">Registreren</a>
+				<a href="#">Registreren</a>
 				<a href="#">Wachtwoord vergeten</a>
 			</div>
 		</form>

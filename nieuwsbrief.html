@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Contact - Theater Imperium</title>
+		<title>Nieuwsbrief - Theater Imperium</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,48 +27,32 @@
 			<ul class="navigatie">
 			<!--als op de button geklikt wordt, komt het reserveer modal tevoorschijn-->
 				<li><a onclick="document.getElementById('reserveren').style.display='block'">Reserveren</a></li>
-				<li><a href="contact.html" class="active">contact</a></li>
+				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="container">
 		<main>
-			<article class="donateurParagraaf">
-				<h1>Contact</h1><br>
-				<p>
-					Theater Imperium<br>
-					Oude Vest 33e<br>
-					2312 XR Leiden<br><br>
+			<section class="align-center">
+				<article>
+					<h1>Nieuwsbrief</h1><br><br>
+					<p>Wilt u op de hoogte gehouden worden van Toneelgroep Imperium?<br>
+						Als u hier uw gegevens opgeeft, dan krijgt u enkele weken voor elke première bericht met informatie over de voorstelling en de mogelijkheid te reserveren.<br><br>
 
-					<strong>Telefoon: </strong><br>
-					071 514 1035<br><br>
+						Nadat u uw gegevens heeft verstuurd, krijgt u eerst een email bericht met daarin een link om te bevestigen dat u onze berichten wilt ontvangen. Pas nadat u op die link heeft geklikt bent u geabonneerd op onze nieuwsbrieven. Uitschrijven kan met een link die in elke nieuwsbrief wordt opgenomen.<br><br>
 
-					<strong>E-mail:</strong><br>
-					Info@imperiumtheater.nl<br><br>
-
-					Heeft u een vraag voor imperium? Vul onderstaand formulier in.<br><br>
-				</p>	
-			
-				<form action="" method="post" id="vraagFormulier">
-						<label for="naam"><b>Uw naam (verplicht)</b></label>
-						<input type="text" placeholder="Vul hier uw naam in" name="naam" id="naam" required>
-
+						Uw email adres zal alleen worden gebruikt voor het versturen van nieuwsbrieven van en over Toneelgroep Imperium.<br><br>
+					</p>
+						
+					<form action="" method="post">
 						<label for="email"><b>Uw email (verplicht)</b></label>
 						<input type="email" placeholder="Vul hier uw email in" name="email" id="email" required>
-						
-						<label for="vraag"><b>Wat is uw vraag? (verplicht)</b></label>
-						<textarea id="vraag" name="vraag" form="vraagFormulier" placeholder="vul hier uw vraag in" rows="4" required></textarea>
 
 						<input type="submit" class="btn btn-primairy" value="Verzenden">			
-				</form>	
-			</article>
+					</form>	
+				</article>
+			</section>
 		</main>
-		
-		<aside class="vriendenFormulier">
-			<figure>
-				<img src="images/foto4.png" alt="contact foto"/>
-			</figure>
-		</aside>
 	</div>
 	
 	<footer>
@@ -83,13 +67,12 @@
 		</figure>
 		<nav class="bottomNav rightNav">
 			<ul>
-				<li><a href="contact.html" class="active">Contact</a></li>
-				<li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="nieuwsbrief.html" class="active">Nieuwsbrief</a></li>
 			</ul>
 		</nav>
 	</footer>
-
-	<!-- Inloggen via emailadres en wachtwoord -->
+<!-- Inloggen via emailadres en wachtwoord -->
 	<div id="inloggen" class="modal modal-inloggen">
 		<form id="login" class="modal-content animate" action="" method="post">
 			<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
@@ -101,6 +84,9 @@
 				<input type="password" placeholder="Vul hier uw wachtwoord in" name="ww" id="ww" required>
 				
 				<input type="submit" class="btn btn-primairy" value="Inloggen">
+				<!-- REVIEW
+				Bij een form moet je geen button tag gebruik, maar input type=submit
+				-->
 			</div>
 			<div class="modal-input">
 				<a href="registreren.html">Registreren</a>

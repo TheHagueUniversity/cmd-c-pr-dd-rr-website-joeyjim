@@ -8,6 +8,7 @@
 
 .container {
 	max-width:80%;
+	min-height:453px;
 	margin: 0 auto;
 }
 
@@ -54,6 +55,10 @@ nav ul li a {
 
 nav ul li a:hover {
 	border-bottom: 3px solid #FFF;
+}
+
+a {
+	cursor:pointer;
 }
 
 .topNav, .bottomNav {
@@ -172,7 +177,7 @@ p a{
 	float:right;
 }
 
-section.overImperium{
+section.align-center{
 	margin-left:auto;
 	margin-right:auto;
 	width: 70%;
@@ -203,6 +208,12 @@ section a{
 	float:right;
 	margin: 0 1.5%;
 	width:43%;
+}
+
+.registreerForm {
+	margin-left:auto;
+	margin-right:auto;
+	width:40%;
 }
 
 .vriendenFormulier img {
@@ -282,7 +293,7 @@ section a{
 
 
 /* input velden */
-input[type=text], input[type=password], input[type=email], input[type=number] {
+input[type=text], input[type=password], input[type=email], input[type=number], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -290,9 +301,10 @@ input[type=text], input[type=password], input[type=email], input[type=number] {
     border: 2px solid #ccc;
 	border-radius: 4px;
     box-sizing: border-box;
+	resize:none;
 }
 
-input[type=text]:valid, input[type=email]:valid {
+input[type=text]:valid, input[type=email]:valid, textarea:valid {
 	background-color:lightgreen;
 }
 
@@ -360,6 +372,5 @@ span.ww {
 }
 
 /*einde modal*/
-
 
  /* gemaakt door Joey de Wit, 16039580 */

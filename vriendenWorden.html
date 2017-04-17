@@ -14,7 +14,7 @@
 			<ul class="navigatie">
 				<li><a href="OverImperium.html">Over imperium</a></li>
 				<li><a href="agenda.html">Agenda</a></li>
-				<li><a href="#">Foto's</a></li>
+				<li><a href="fotos.html">Foto's</a></li>
 			</ul>
 		</nav>
 		<figure class="logo">
@@ -96,14 +96,14 @@
 		<nav class="bottomNav rightNav">
 			<ul>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="#">Nieuwsbrief</a></li>
+				<li><a href="nieuwsbrief.html">Nieuwsbrief</a></li>
 			</ul>
 		</nav>
 	</footer>
 		
 	<!-- Inloggen via emailadres en wachtwoord -->
-	<div id="inloggen" class="modal">
-		<form class="modal-content animate" action="">
+	<div id="inloggen" class="modal modal-inloggen">
+		<form id="login" class="modal-content animate" action="" method="post">
 			<span onclick="document.getElementById('inloggen').style.display='none'" class="sluit" title="Sluit inloggen">&times;</span>
 			<div class="modal-input">
 				<label for="gebrnaam"><b>Gebruikersnaam</b></label>
@@ -115,15 +115,17 @@
 				<input type="submit" class="btn btn-primairy" value="Inloggen">
 			</div>
 			<div class="modal-input">
-				<a href="#">Registreren</a>
+				<a href="registreren.html">Registreren</a>
 				<a href="#">Wachtwoord vergeten</a>
 			</div>
 		</form>
 	</div>
 	
+	<!-- reserveren van een voorstelling / bestelproces-->
 	<div id="reserveren" class="modal">
-		<form class="modal-content modal-content-reserveren animate" action="">
+		<form id="reserveer" class="modal-content modal-content-reserveren animate" action="">
 			<div class="modal-header">
+				<!--als op de button geklikt wordt, komt het reserveer modal tevoorschijn-->
 				<span onclick="document.getElementById('reserveren').style.display='none'" class="sluit" title="Sluit reserveren">&times;</span>
 					<h1>Reserveren</h1>
 			</div>
@@ -177,7 +179,6 @@
 			</div>
 		</form>
 	</div>
-		
 		
 	<!-- Gemaakt door Joey de Wit, 16039580 -->
 </body>
