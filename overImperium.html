@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Homepage - Theater Imperium</title>
+		<title>Over ons - Theater Imperium</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +13,7 @@
 		<nav class="topNav leftNav">
 			<ul class="navigatie">
 				<li><a href="OverImperium.html" class="active">Over imperium</a></li>
-				<li><a href="#">Agenda</a></li>
+				<li><a href="agenda.html">Agenda</a></li>
 				<li><a href="#">Foto's</a></li>
 			</ul>
 		</nav>
@@ -24,8 +24,8 @@
 			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
 			<a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
-				<li><a href="#">Reserveren</a></li>
-				<li><a href="#">contact</a></li>
+				<li><a onclick="document.getElementById('reserveren').style.display='block'">Reserveren</a></li>
+				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -64,7 +64,7 @@
 		</figure>
 		<nav class="bottomNav rightNav">
 			<ul>
-				<li><a href="#">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 				<li><a href="#">Nieuwsbrief</a></li>
 			</ul>	
 		</nav>
@@ -86,6 +86,63 @@
 			<div class="modal-input">
 				<a href="#">Registreren</a>
 				<a href="#">Wachtwoord vergeten</a>
+			</div>
+		</form>
+	</div>
+	
+	<div id="reserveren" class="modal">
+		<form class="modal-content modal-content-reserveren animate" action="">
+			<div class="modal-header">
+				<span onclick="document.getElementById('reserveren').style.display='none'" class="sluit" title="Sluit reserveren">&times;</span>
+					<h1>Reserveren</h1>
+			</div>
+			
+			<div class="modal-input">
+				<div class="container">	
+					<ul>
+						<li class="reserveerItem">
+							<div class="datum">
+								<span>16</span>
+								<h5>april</h5>
+							</div>
+							<h3>Het Zouthuis</h3>
+							<p>Het Zouthuis is zoet, zuur en bitter. Het is hard, grappig, pijnlijk, ontroerend en wrang. Een huis vol geheime luikjes, verdwenen kasten, verliefde beertjes, één dood kind en een heleboel verroeste intimiteit.</p>		
+							<button class="btn btn-primairy">Reserveer</button>
+						</li>
+						
+						<li class="reserveerItem">
+							<div class="datum">
+								<span>20</span>
+								<h5>april</h5>
+							</div>
+							<h3>De dochter van de boevenkoning</h3>
+							<p>Regisseur Laura Liefting pakt uit met een bruisende familievoorstelling. Met haar fantasierijke theatertaal neemt ze jong en oud mee in een grappige en verrassende wereld waar alles kan gebeuren.</p>		
+							<button class="btn btn-primairy">Reserveer</button>
+						</li>
+						
+						<li class="reserveerItem">
+							<div class="datum">
+								<span>27</span>
+								<h5>april</h5>
+							</div>
+							<h3>Killer Joe</h3>
+							<p>Het is midden in de nacht. Pitbull T-Bone slaat aan bij de trailer-home van de white trash familie Smith in Texas. Aan de deur zoon Chris. Chris woont bij z’n moeder. En z’n moeder heeft 75 gram coke van hem gestolen. Nu kan Chris de gangsters bij wie hij in het krijt staat niet betalen. Chris móét iets doen. De hulp van de titelheld, politieagent en huurmoordenaar Killer Joe, wordt ingeroepen.</p>		
+							<button class="btn btn-primairy">Reserveer</button>
+						</li>
+						
+						<li class="reserveerItem">
+							<div class="datum">
+								<span>28</span>
+								<h5>april</h5>
+							</div>
+							<h3>Twee</h3>
+							<p>Twee speelt zich af in een café. De kastelein en zijn vrouw runnen een goedlopende kroeg. Elke avond komen er mensen binnen die hun levensverhaal kwijt kunnen. Iedereen is welkom. Tussen alle verhalen in krijgen we te horen hoe de kroegbaas en zijn vrouw door het leven zijn gegaan. Scherpzinnige, krachtige en ontroerende verhalen zijn het. Uit het leven gegrepen!</p>		
+							<button class="btn btn-primairy">Reserveer</button>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="modal-footer">	
 			</div>
 		</form>
 	</div>

@@ -2,22 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Homepage - Theater Imperium</title>
+		<title>Contact - Theater Imperium</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<[endif]-->
 	</head>
 <body>
-	<!-- REVIEW
-	Je website is nu schermvullend. Als je een maximumbreedte wilt instellen kun je
-	een <div class="container"> gebruiken met een max-width: van 1200px en
-	een margin: 0 auto. Dan centreert ie ook gelijk mooi in het midden
-	-->
-	<!-- REVIEW
-	Probeer je comments functioneel te houden. Ik kan html lezen, dus ik zie
-	ook dat dit een header is door de tag te lezen
-	-->
 	<header >
 		<nav class="topNav leftNav">
 			<ul class="navigatie">
@@ -29,107 +20,36 @@
 		<figure class="logo">
 			<a href="index.html"><img src="images/home_button_u66_mouseOver.png" alt="Logo Imperium"/></a>
 		</figure>
-		<!-- REVIEW
-		Kijk nog even naar het voorbeeld wat ik gisteren in de klas heb gegeven (Codepen)
-		-->
 		<nav class="topNav rightNav">
 			<!--als op de button geklikt wordt, komt het inlog modal tevoorschijn-->
 			<button type="button" class="btn btn-primairy" onclick="document.getElementById('inloggen').style.display='block'">Inloggen</button>
-			<!-- REVIEW
-			Goede class name. Wat je nog zou kunnen doen is een algemene class button
-			maken, en een tweede class primary. Zo heb je de basis al voor een
-			button staan, en kun je vrij snel uitbreiden naar secondary, tertiary, etc
-			-->
 			<a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a>
 			<ul class="navigatie">
 			<!--als op de button geklikt wordt, komt het reserveer modal tevoorschijn-->
 				<li><a onclick="document.getElementById('reserveren').style.display='block'">Reserveren</a></li>
-				<li><a href="contact.html">contact</a></li>
+				<li><a href="contact.html" class="active">contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="container">
-
 		<main>
-			<!-- sectie welkomtekst en vrienden worden -->
-			<section class="vrienden">
-				<article>
-					<figure>
-						<img src="images/vrienden.jpg" alt="vrienden van het Imperium Theater"/>
-						<!-- REVIEW
-						Alt tekst zou hier moeten zijn: Vrienden van het Imperium Theater
-						-->
-					</figure>
-					<hgroup>
-						<h1>Toneelgroep Imperium</h1>
-					</hgroup>
-					<p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen. <a href="vriendenWorden.html" class="btn btn-primairy">Vrienden worden</a> </p>
-				</article>
-			</section>
+			<h1>Contact</h1><br>
+			<p>
+				Theater Imperium<br>
+				Oude Vest 33e<br>
+				2312 XR Leiden<br><br>
 
-			<!-- sectie voor de recente voorstellingen agenda -->
-			<section class="list agenda">
-					<!-- REVIEW
-					de agenda is geen article, maar kan gewoon een section zijn
-					Alle voorstellingen hieronder is een lijst, dus gebruik dan een ul
-					-->
-					<a href="#"><h1>agenda</h1></a>
-					<ul>
-						<li>
-							<figure id="agenda1"  onmouseEnter="mouseEnter()">
-								<img src="images/agenda1.png" alt="Voorstelling 1"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/agenda2.png" alt="Voorstelling 2"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/agenda3.png" alt="Voorstelling 3"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/agenda4.jpg" alt="Voorstelling 4"/>
-							</figure>
-						</li>
-					</ul>
-			</section>
+				<strong>Telefoon: </strong><br>
+				071 514 1035<br><br>
 
-			<section class=" list fotos">
-					<a href="#"><h1>foto's</h1></a>
-					<ul>
-						<li>
-							<figure>
-								<img src="images/foto1.png" alt="Recente foto 1"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/foto2.png" alt="Recente foto 2"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/foto3.png" alt="Recente foto 3"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/foto4.png" alt="Recente foto 4"/>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="images/foto5.jpg" alt="Recente foto 5"/>
-							</figure>
-						</li>
-					</ul>
-			</section>
+				<strong>E-mail:</strong><br>
+				Info@imperiumtheater.nl<br><br>
+
+				Heeft u een vraag voor imperium? Vul onderstaand formulier in.<br><br>
+			</p>
 		</main>
 	</div>
+	
 	<footer>
 		<p class="bottomNav leftNav">
 			Theater Imperium<br>
@@ -142,23 +62,13 @@
 		</figure>
 		<nav class="bottomNav rightNav">
 			<ul>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
 				<li><a href="#">Nieuwsbrief</a></li>
 			</ul>
 		</nav>
 	</footer>
 
-	<!-- REVIEW
-	Wat er nu gebeurt als een browser of zoekmachine jouw html leest, is dat ie eerst
-	door het inlogformulier heen moet voordat ie bij de belangrijkste content aankomt.
-	Hij interpreteert ook datgene wat bovenaan staan, als belangrijker dan wat onderaan staat.
-	Dit soort <div>'s kun je dan ook beter gewoon onderaan de pagina plaatsen.
-	Met CSS zet je het toch op de juiste plek, dus dat maakt verder ook niet uit
-	-->
 	
-	<!-- REVIEW
-	Comment hier zou kunnen zijn: Inloggen via emailadres en wachtwoord, of via Facebook
-	-->
 	<!-- Inloggen via emailadres en wachtwoord -->
 	
 	<div id="inloggen" class="modal modal-inloggen">
